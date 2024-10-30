@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import Dashboard from '../components/Dashboard';
 import { IoIosArrowForward } from "react-icons/io";
-import DatePicker from "react-datepicker"; // Import the date picker
-import "react-datepicker/dist/react-datepicker.css"; // Import the CSS for the date picker
-import { format } from 'date-fns'; // Import date-fns for formatting dates
+import DatePicker from "react-datepicker"; 
+import "react-datepicker/dist/react-datepicker.css";
+import { format } from 'date-fns'; 
+import Button from '../components/Button'
+
 
 const AddEmployee = () => {
-  const [date, setDate] = useState(null); // State to hold the selected date
+  const [date, setDate] = useState(null); 
 
   const handleDateChange = (date) => {
-    setDate(date); // Update the date state
+    setDate(date); 
   };
 
   return (
@@ -102,13 +104,15 @@ const AddEmployee = () => {
         </div>
        
       </form>
-      <div className="flex w-1/3 ml-4">
-        <button
-          type="submit"
-          className="bg-customblue text-white rounded p-2 hover:bg-blue-600"
-        >
-          Add Employee
-        </button>
+      <div className="flex w-36 ml-12">
+      <Button
+                intent="primary"
+                size="md"
+                className="w-full" 
+                type="submit"
+              >
+                Add employee
+              </Button>
       </div>
 
     </Dashboard>

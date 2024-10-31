@@ -7,7 +7,7 @@ import { IoDocumentOutline } from "react-icons/io5";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { LiaFileContractSolid } from "react-icons/lia";
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa'; 
-import image from '../assets/logo.png';
+import image from '../assets/logo.png'
 
 const Sidebar = () => {
   const [showInvoicesDropdown, setShowInvoicesDropdown] = useState(false);
@@ -73,7 +73,7 @@ const Sidebar = () => {
                 </div>
               </li>
               <li className="mb-1">
-                <Link to="/payroll" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
+                <Link to="/payroll-list" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
                   <MdOutlinePayments className='text-2xl ml-3' />
                   <span className="ml-2">Payroll</span>
                 </Link>
@@ -95,13 +95,13 @@ const Sidebar = () => {
                   {showInvoicesDropdown && (
                     <ul className="ml-10 mt-2">
                       <li className="mb-1">
-                        <Link to="/invoices/purchases" className="block p-2 hover:bg-customblue hover:text-white hover:rounded-md transition-colors">
-                          Purchases
+                        <Link to="/add-invoice" className="block p-2 hover:bg-customblue hover:text-white hover:rounded-md transition-colors">
+                          Add invoice
                         </Link>
                       </li>
                       <li className="mb-1">
-                        <Link to="/invoices/sales" className="block p-2 hover:bg-customblue hover:text-white hover:rounded-md transition-colors">
-                          Sales
+                        <Link to="/list-invoice" className="block p-2 hover:bg-customblue hover:text-white hover:rounded-md transition-colors">
+                          View Invoice
                         </Link>
                       </li>
                     </ul>

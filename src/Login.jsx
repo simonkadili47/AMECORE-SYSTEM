@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LOGO from './assets/logo.png';
-import Button from './components/Button'
+import Button from './components/buttons/Button'
 
 const Login = () => {
   return (

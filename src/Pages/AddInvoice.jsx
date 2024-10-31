@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react'
+
 import Dashboard from '../components/Dashboard/Dashboard';
 import { IoIosArrowForward } from "react-icons/io";
 import DatePicker from "react-datepicker"; 
@@ -7,7 +8,7 @@ import { format } from 'date-fns';
 import Button from '../components/buttons/Button'
 
 
-const AddEmployee = () => {
+const AddInvoice = () => {
   const [date, setDate] = useState(null); 
 
   const handleDateChange = (date) => {
@@ -18,63 +19,63 @@ const AddEmployee = () => {
     <Dashboard>
       {/* Main content starts here */}
       <div className="flex flex-col justify-start items-start p-4 h-full">
-        <h1 className="text-2xl font-semibold mt-10">Add Employee</h1>
+        <h1 className="text-2xl font-semibold mt-10">Add Invoice</h1>
       </div>
       <div className='flex ml-3 mb-4'>
         <h2>Dashboard</h2>
         <IoIosArrowForward className='mt-1 ml-1' />
-        <h2>Employee</h2>
+        <h2>Invoices</h2>
         <IoIosArrowForward className='mt-1 ml-1' />
-        <h2>Add Employee</h2>
+        <h2>Add Invoice</h2>
       </div>
 
-      {/* Employee Form Starts Here */}
+      {/* add invoice Form Starts Here */}
       <form className="flex flex-col p-4 space-y-4">
         <div className="w-1/3">
-          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="full_name">
-            Full Name
+          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="invoice_name">
+            Invoice Name
           </label>
           <input
             type="text"
-            id="full_name"
+            id="invoice_name"
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter your full name"
+            placeholder="Enter invoice name"
           />
         </div>
 
         <div className="w-1/3">
-          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="position">
-            Position
-          </label>
-          <input
-            type="text"
-            id="position"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter his/her position"
-          />
-        </div>
-
-        <div className="w-1/3">
-          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="national_identification">
-            National Identification Number
+          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="amount">
+            Amount
           </label>
           <input
             type="number"
-            id="national_identification"
+            id="amount"
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter his/her NIN"
+            placeholder="Enter amount"
           />
         </div>
 
         <div className="w-1/3">
-          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="age">
-            Age
+          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="bonus">
+            Bonus
           </label>
           <input
             type="number"
-            id="age"
+            id="bonus"
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter his/her age"
+            placeholder="Enter bonus"
+          />
+        </div>
+        <div className="w-1/4">
+          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="due_date">
+            Due Date
+          </label>
+          <DatePicker
+            selected={date}
+            onChange={handleDateChange} 
+            dateFormat="dd-MM-yyyy" 
+            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholderText="DD-MM-YYYY" 
           />
         </div>
 
@@ -86,22 +87,11 @@ const AddEmployee = () => {
             type="text"
             id="status"
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter his/her status"
+            placeholder="Enter status"
           />
         </div>
 
-        <div className="w-1/4">
-          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="date">
-            Date
-          </label>
-          <DatePicker
-            selected={date}
-            onChange={handleDateChange} 
-            dateFormat="dd-MM-yyyy" 
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholderText="DD-MM-YYYY" 
-          />
-        </div>
+       
        
       </form>
       <div className="flex w-36 ml-12">
@@ -111,7 +101,7 @@ const AddEmployee = () => {
                 className="w-full" 
                 type="submit"
               >
-                Add employee
+                Add Invoice
               </Button>
       </div>
 
@@ -119,4 +109,4 @@ const AddEmployee = () => {
   );
 };
 
-export default AddEmployee;
+export default AddInvoice

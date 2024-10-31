@@ -1,7 +1,7 @@
 import React from 'react';
-import Dashboard from '../components/Dashboard';
+import Dashboard from '../components/Dashboard/Dashboard';
 import { IoIosArrowForward } from "react-icons/io";
-import Button from '../components/Button';
+import Button from '../components/buttons/Button';
 import { FaRegFilePdf } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 

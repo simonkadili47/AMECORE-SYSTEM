@@ -4,6 +4,9 @@ import { IoIosArrowForward } from "react-icons/io";
 import Button from '../components/buttons/Button';
 import { FaRegFilePdf } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { FaTrash } from "react-icons/fa";
+import { FaRegEdit } from "react-icons/fa";
+
 
 const ListEmployee = () => {
   // Sample employee data
@@ -59,6 +62,7 @@ const ListEmployee = () => {
               <th className="px-4 py-2 text-gray-600 font-medium">Age</th>
               <th className="px-4 py-2 text-gray-600 font-medium">Status</th>
               <th className="px-4 py-2 text-gray-600 font-medium">Date</th>
+              <th className="px-4 py-2 text-gray-600 font-medium">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -70,6 +74,17 @@ const ListEmployee = () => {
                 <td className="px-4 py-2">{employee.age}</td>
                 <td className="px-4 py-2">{employee.Status}</td>
                 <td className="px-4 py-2">{employee.date}</td>
+
+                <td className="px-4 py-2 flex space-x-4 ml-4">
+                  <span className="flex items-center text-customblue hover:text-blue-700 cursor-pointer">
+                    <FaRegEdit className="mr-1" />
+                    Edit
+                  </span>
+                  <span className="flex items-center text-red-700 cursor-pointer">
+                    <FaTrash className="mr-1" />
+                    Delete
+                  </span>
+                </td>
               </tr>
             ))}
           </tbody>

@@ -11,6 +11,7 @@ const ListInvoice = () => {
   const listinvoice = [
     {
       invoicename: "Sales invoice",
+      invoicenumber:"123435",
       amount: "1,500,000",
       bonus: "500,000",
       date: "12-10-2024",
@@ -59,12 +60,13 @@ const ListInvoice = () => {
         <table className="min-w-full bg-white border border-gray-200 rounded-xl">
           <thead>
             <tr className="bg-gray-100 border-b border-gray-200">
-              <th className="px-4 py-2 text-gray-600 font-medium"> Invoice Name </th>
-              <th className="px-4 py-2 text-gray-600 font-medium"> Amount (Tzs)</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Bonus (TZs){" "}</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Due Date</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Status</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Action</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium"> Invoice Name </th>
+              <th className="px-4 py-2 border text-gray-600 font-medium"> Invoice Number </th>
+              <th className="px-4 py-2 border text-gray-600 font-medium"> Amount (Tzs)</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium">Bonus (TZs){" "}</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium w-32">Due Date</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium">Status</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -73,12 +75,13 @@ const ListInvoice = () => {
                 key={invoiceList.fullname}
                 className="border-b text-md border-gray-200 hover:bg-gray-50"
               >
-                <td className="px-4 py-2">{invoiceList.invoicename}</td>
-                <td className="px-4 py-2">{invoiceList.amount}</td>
-                <td className="px-4 py-2">{invoiceList.bonus}</td>
-                <td className="px-4 py-2">{invoiceList.date}</td>
-                <td className="px-4 py-2">{invoiceList.status}</td>
-                <td className="px-4 py-2 flex space-x-4 ml-4">
+                <td className="px-4 py-2 border">{invoiceList.invoicename}</td>
+                <td className="px-4 py-2 border">{invoiceList.invoicenumber}</td>
+                <td className="px-4 py-2 border">{invoiceList.amount}</td>
+                <td className="px-4 py-2 border">{invoiceList.bonus}</td>
+                <td className="px-4 py-2 border">{invoiceList.date}</td>
+                <td className="px-4 py-2 border">{invoiceList.status}</td>
+                <td className="px-4 py-2 flex space-x-4 ml-4 border">
                   <span className="flex items-center text-customblue hover:text-blue-700 cursor-pointer">
                     <FaRegEdit className="mr-1" />
                     Edit

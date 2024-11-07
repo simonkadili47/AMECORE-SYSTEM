@@ -80,7 +80,7 @@ const Header = () => {
           </div>
 
           {userMenuOpen && (
-            <div className="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
+            <div className="absolute right-0 mt-2 w-60 bg-white border border-gray-200 rounded-lg shadow-lg">
               <h1 className="text-lg font-bold p-3 border-b border-gray-200">
                 My Account
               </h1>

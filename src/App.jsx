@@ -10,11 +10,16 @@ import ListEmployee from './Pages/ListEmployee'
 import PayrollList from './Pages/PayrollList';
 import AddInvoice from './Pages/AddInvoice';
 import ListInvoice from './Pages/ListInvoice';
+import AddPayroll from './Pages/AddPayroll';
+import ListPurchase from './Pages/ListPurchase';
+import AddPurchase from './Pages/AddPurchase';
+import ListSales from './Pages/ListSales'
+import AddSales from './Pages/AddSales'
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className='font-sans'>
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
 
@@ -27,6 +32,11 @@ function App() {
           <Route path="/payroll-list" element={<PayrollList/>} />
           <Route path="/add-invoice" element={<AddInvoice/>} />
           <Route path="/list-invoice" element={<ListInvoice/>} />
+          <Route path="/add-payroll" element={<AddPayroll/>} />
+          <Route path="/list-purchase" element={<ListPurchase/>} />
+          <Route path="/add-purchase" element={<AddPurchase/>} />
+          <Route path="/add-sales" element={<AddSales/>} />
+          <Route path="/list-sales" element={<ListSales/>} />
           
 
           

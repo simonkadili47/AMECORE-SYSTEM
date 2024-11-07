@@ -10,8 +10,10 @@ export default {
         customblue: "#1c1f52",
         customgray: "#f6f7f9",
       },
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], 
+      },
     },
   },
   plugins: [],
 }
-

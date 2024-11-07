@@ -2,16 +2,14 @@ import React from 'react';
 import Dashboard from '../components/Dashboard/Dashboard';
 import { IoIosArrowForward } from "react-icons/io";
 import Button from '../components/buttons/Button';
-import { FaRegFilePdf } from "react-icons/fa";
-import { Link } from 'react-router-dom';
-import { FaTrash } from "react-icons/fa";
-import { FaRegEdit } from "react-icons/fa";
 
+import { Link } from 'react-router-dom';
 
 const ListEmployee = () => {
   // Sample employee data
   const employees = [
-    { fullname: 'John Doe', position: 'Software Engineer', NIN: '191991999887', age: '24', Status: 'employed', date: '20-10-2024' },
+    { fullname: 'John Doe', position: 'Software Engineer', NIN: '191991999887', age: '24', cv: '', status: 'Employed', date: '20-10-2024' },
+    { fullname: 'Jane Smith', position: 'Project Manager', NIN: '191991999888', age: '29', cv: '', status: 'Employed', date: '15-09-2024' },
   ];
 
   return (
@@ -23,8 +21,6 @@ const ListEmployee = () => {
         <h2>Dashboard</h2>
         <IoIosArrowForward className="mt-1 ml-1" />
         <h2>Employee</h2>
-        <IoIosArrowForward className="mt-1 ml-1" />
-        <h2>List Employee</h2>
       </div>
 
       <div className="flex justify-end w-full p-3 space-x-4">
@@ -35,12 +31,11 @@ const ListEmployee = () => {
           type="submit"
         >
           <span className="flex items-center space-x-2">
-          <FaRegFilePdf />
+            <FaRegFilePdf />
             <span>Print</span>
-         
           </span>
         </Button>
-        <Link to="/add-employee"> 
+        <Link to="/add-employee">
           <Button
             intent="primary"
             size="sm"
@@ -49,41 +44,44 @@ const ListEmployee = () => {
           >
             Add Employee
           </Button>
-          </Link>
+        </Link>
       </div>
 
-      <div className="overflow-x-auto p-4">
-        <table className="min-w-full bg-white border border-gray-200 rounded-xl">
-          <thead>
-            <tr className="bg-gray-100 border-b border-gray-200">
-              <th className="px-4 py-2 text-gray-600 font-medium">Full Name</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Position</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">NIN</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Age</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Status</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Date</th>
-              <th className="px-4 py-2 text-gray-600 font-medium">Action</th>
+      <div className="overflow-x-auto p-6 w-full">
+        <table className="w-full bg-white border border-gray-200 rounded-xl">
+          <thead className='p-6'> 
+            <tr className="bg-gray-100 p-6 border-b border-gray-200">
+              <th className="p-8 py-3 border text-gray-600 font-medium">FULL NAME</th>
+              <th className="pr-6 py-3 border text-gray-600 font-medium ">POSITION</th>
+              <th className="pr-20 py-3 border text-gray-600 font-medium">NIN</th>
+              <th className="pr-2 py-3 border text-gray-600 font-medium">AGE</th>
+              <th className="pr-4 py-3 border text-gray-600 font-medium">CURRICULUM VITAE</th>
+              <th className="pr-8  py-3 border text-gray-600 font-medium">STATUS</th>
+              <th className="pr-2 py-3 border text-gray-600 font-medium w-32">DATE</th>
+              <th className="px-6 py-3 border text-gray-600 font-medium">ACTION</th>
             </tr>
           </thead>
           <tbody>
             {employees.map((employee) => (
-              <tr key={employee.fullname} className="border-b text-md border-gray-200 hover:bg-gray-50">
-                <td className="px-4 py-2">{employee.fullname}</td>
-                <td className="px-4 py-2">{employee.position}</td>
-                <td className="px-4 py-2">{employee.NIN}</td>
-                <td className="px-4 py-2">{employee.age}</td>
-                <td className="px-4 py-2">{employee.Status}</td>
-                <td className="px-4 py-2">{employee.date}</td>
-
-                <td className="px-4 py-2 flex space-x-4 ml-4">
-                  <span className="flex items-center text-customblue hover:text-blue-700 cursor-pointer">
-                    <FaRegEdit className="mr-1" />
-                    Edit
-                  </span>
-                  <span className="flex items-center text-red-700 cursor-pointer">
-                    <FaTrash className="mr-1" />
-                    Delete
-                  </span>
+              <tr key={employee.fullname} className="border-b text-md border-gray-200">
+                <td className="px-6 py-2 border">{employee.fullname}</td>
+                <td className="px-6 py-2 border">{employee.position}</td>
+                <td className="pr-6 border">{employee.NIN}</td>
+                <td className="px-6 py-2 border">{employee.age}</td>
+                <td className="pr-6 border">{employee.cv ? employee.cv : 'N/A'}</td>
+                <td className="px-6 py-2 border">{employee.status}</td>
+                <td className="pr-6 py-2 border">{employee.date}</td>
+                
+                <td className="px-6 py-2 border">
+                  {/* Action Icons */}
+                  <div className="flex items-center space-x-4">
+                    <button className="text-blue-500 hover:text-blue-700">
+                      <FaRegEdit />
+                    </button>
+                    <button className="text-red-600 hover:text-red-800">
+                      <FaTrash />
+                    </button>
+                  </div>
                 </td>
               </tr>
             ))}

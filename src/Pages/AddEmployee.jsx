@@ -4,8 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import DatePicker from "react-datepicker"; 
 import "react-datepicker/dist/react-datepicker.css";
 import { format } from 'date-fns'; 
-import Button from '../components/buttons/Button'
-
+import Button from '../components/buttons/Button';
 
 const AddEmployee = () => {
   const [date, setDate] = useState(null); 
@@ -18,7 +17,7 @@ const AddEmployee = () => {
     <Dashboard>
       {/* Main content starts here */}
       <div className="flex flex-col justify-start items-start p-4 h-full">
-        <h1 className="text-2xl font-semibold mt-10">Add Employee</h1>
+        <h1 className="text-xl font-semibold mt-10">Add Employee</h1>
       </div>
       <div className='flex ml-3 mb-4'>
         <h2>Dashboard</h2>
@@ -28,69 +27,80 @@ const AddEmployee = () => {
         <h2>Add Employee</h2>
       </div>
 
-      {/* Employee Form Starts Here */}
-      <form className="flex flex-col p-4 space-y-4">
-        <div className="w-1/3">
+      <form className="grid grid-cols-2 gap-4 p-4 mx-auto w-3/4">
+        <div className='w-2/3 ml-28'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="full_name">
             Full Name
           </label>
           <input
             type="text"
             id="full_name"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter your full name"
           />
         </div>
 
-        <div className="w-1/3">
+        <div className='w-2/3'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="position">
             Position
           </label>
           <input
             type="text"
             id="position"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter his/her position"
           />
         </div>
 
-        <div className="w-1/3">
+        <div className='w-2/3 ml-28'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="national_identification">
-            National Identification Number
+            NIN
           </label>
           <input
             type="number"
             id="national_identification"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter his/her NIN"
           />
         </div>
 
-        <div className="w-1/3">
+        <div className='w-2/3'> 
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="age">
             Age
           </label>
           <input
             type="number"
             id="age"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter his/her age"
           />
         </div>
 
-        <div className="w-1/3">
+        <div className='w-2/3 ml-28'>
+          <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="curiculam-vitae">
+            Curiculam Vitae
+          </label>
+          <input
+            type="file"
+            id="curiculam_vitae"
+            className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            placeholder="Upload CV"
+          />
+        </div>
+
+        <div className='w-2/3'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="status">
             Status
           </label>
           <input
             type="text"
             id="status"
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Enter his/her status"
           />
         </div>
 
-        <div className="w-1/4">
+        <div className='ml-28'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="date">
             Date
           </label>
@@ -98,23 +108,22 @@ const AddEmployee = () => {
             selected={date}
             onChange={handleDateChange} 
             dateFormat="dd-MM-yyyy" 
-            className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholderText="DD-MM-YYYY" 
           />
         </div>
-       
       </form>
-      <div className="flex w-36 ml-12">
-      <Button
-                intent="primary"
-                size="md"
-                className="w-full" 
-                type="submit"
-              >
-                Add employee
-              </Button>
-      </div>
 
+      <div className="flex w-36 mx-auto mt-2">
+        <Button
+          intent="primary"
+          size="md"
+          className="w-full" 
+          type="submit"
+        >
+          Add Employee
+        </Button>
+      </div>
     </Dashboard>
   );
 };

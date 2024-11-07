@@ -35,7 +35,7 @@ const Sidebar = () => {
               className="w-16 h-auto" 
               style={{ maxWidth: '100%', height: 'auto' }} 
             />
-            <p className='mt-4 text-customblue'>AMECORE</p>
+            <p className='mt-4 text-customblue font-bold'>AMECORE</p>
           </div>
           <h3 className='mt-1'>
             <Link to="/dashboard" className="flex items-center ml-3 hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">

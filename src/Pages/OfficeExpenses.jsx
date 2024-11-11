@@ -3,47 +3,36 @@ import Dashboard from '../components/Dashboard/Dashboard'
 import { IoIosArrowForward } from "react-icons/io";
 import Button from '../components/buttons/Button';
 
-const AddPurchase = () => {
+const OfficeExpenses = () => {
     return (
         <Dashboard>
           {/* Main content starts here */}
           <div className="flex flex-col justify-start items-start p-4 h-full">
-            <h1 className="text-xl font-semibold mt-10">Add Purchase</h1>
+            <h1 className="text-xl font-semibold mt-10">Add Expenses</h1>
           </div>
           <div className='flex ml-3 mb-4'>
             <h2>Dashboard</h2>
             <IoIosArrowForward className='mt-1 ml-1' />
-            <h2>Invoices</h2>
+            <h2>Office Expenses</h2>
             <IoIosArrowForward className='mt-1 ml-1' />
-            <h2>Add Purchase</h2>
+            <h2>Add office expenses</h2>
           </div>
     
           <form className="grid grid-cols-2 gap-6 p-4 mx-auto w-3/4">
             <div className='w-2/3 ml-28'>
-              <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="items">
-               Items
+              <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="type">
+               Type
               </label>
               <input
                 type="text"
-                id="items"
+                id="type"
                 className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Enter items"
+                placeholder="Enter type"
               />
             </div>
             <div className='w-2/3'>
-              <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="quantity">
-              Quantity
-              </label>
-              <input
-                type="number"
-                id="quantity"
-                className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Enterquantity"
-              />
-            </div>
-            <div className='w-2/3 ml-28'>
               <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="amount">
-               Amount
+              Amount
               </label>
               <input
                 type="number"
@@ -52,7 +41,7 @@ const AddPurchase = () => {
                 placeholder="Enter amount"
               />
             </div>
-            <div className='w-2/3 '>
+            <div className='w-2/3 ml-28'>
               <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="date">
                Date
               </label>
@@ -63,6 +52,17 @@ const AddPurchase = () => {
                 placeholder="Date"
               />
             </div>
+            <div className='w-2/3'>
+              <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="description">
+              Description
+              </label>
+              <input
+                type="text"
+                id="description"
+                className="w-full px-2 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter description"
+              />
+            </div>
             <div className="flex w-40 mr-12 mx-auto mt-2">
             <Button
               intent="primary"
@@ -70,7 +70,7 @@ const AddPurchase = () => {
               className="w-full" 
               type="submit"
             >
-              Add Purchase
+              Add expenses
             </Button>
           </div>
           </form>
@@ -80,4 +80,5 @@ const AddPurchase = () => {
       )
     }
 
-export default AddPurchase
+
+export default OfficeExpenses

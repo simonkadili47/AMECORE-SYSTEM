@@ -1,6 +1,7 @@
 import React from 'react';
 import Dashboard from '../components/Dashboard/Dashboard';
 import { IoIosArrowForward } from "react-icons/io";
+import { FaRegFilePdf, FaTrash, FaRegEdit } from "react-icons/fa";
 import Button from '../components/buttons/Button';
 
 import { Link } from 'react-router-dom';

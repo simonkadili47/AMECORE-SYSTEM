@@ -47,7 +47,7 @@ const Sidebar = () => {
             <ul>
             <li className="mb-2">
                 <Link to="/list-employee" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
-                  <FaUser  className='text-xl ml-3' />
+                  <FaUser  className='text-lg ml-3' />
                   <span className="ml-2">Employee</span>
                 </Link>
               </li>
@@ -88,39 +88,8 @@ const Sidebar = () => {
                   )}
                 </div>
               </li>
-
-              <li className="mb-1">
-                <div className="flex flex-col">
-                  <button
-                    onClick={togglePurchasesDropdown}
-                    className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors"
-                  >
-                    <IoDocumentOutline className='text-2xl ml-3' />
-                    <span className="ml-2">Purchases</span>
-                    {showPurchasesDropdown ? (
-                      <FaCaretUp className="ml-2 text-xl" /> 
-                    ) : (
-                      <FaCaretDown className="ml-2 text-xl" /> 
-                    )}
-                  </button>
-                  {showPurchasesDropdown && (
-                    <ul className="ml-10 mt-2">
-                      <li className="mb-1">
-                        <Link to="/add-purchase" className="block p-2 hover:bg-customblue hover:text-white hover:rounded-md transition-colors">
-                          Add purchase
-                        </Link>
-                      </li>
-                      <li className="mb-1">
-                        <Link to="/list-purchase" className="block p-2 hover:bg-customblue hover:text-white hover:rounded-md transition-colors">
-                          View purchase
-                        </Link>
-                      </li>
-                    </ul>
-                  )}
-                </div>
-              </li>
               <li className="mb-2">
-                <Link to="/office-expenses" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
+                <Link to="/list-expenses" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
                   <FaMoneyBillTransfer className='text-2xl ml-3' />
                   <span className="ml-2">Office Expenses</span>
                 </Link>

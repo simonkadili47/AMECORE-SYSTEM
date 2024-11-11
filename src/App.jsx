@@ -15,6 +15,8 @@ import ListPurchase from './Pages/ListPurchase';
 import AddPurchase from './Pages/AddPurchase';
 import ListSales from './Pages/ListSales'
 import AddSales from './Pages/AddSales'
+import OfficeExpenses from './Pages/OfficeExpenses';
+import ListExpenses from './Pages/ListExpenses';
 
 function App() {
   return (
@@ -37,6 +39,9 @@ function App() {
           <Route path="/add-purchase" element={<AddPurchase/>} />
           <Route path="/add-sales" element={<AddSales/>} />
           <Route path="/list-sales" element={<ListSales/>} />
+          <Route path="/list-expenses" element={<ListExpenses/>} />
+          <Route path="/add-expenses" element={<OfficeExpenses/>} />
+
           
 
           

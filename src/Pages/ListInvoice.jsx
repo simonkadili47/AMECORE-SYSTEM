@@ -60,20 +60,20 @@ const ListInvoice = () => {
         <table className="min-w-full bg-white border border-gray-200 rounded-xl">
           <thead>
             <tr className="bg-gray-100 border-b border-gray-200">
-              <th className="px-4 py-2 border text-gray-600 font-medium"> Invoice Name </th>
-              <th className="px-4 py-2 border text-gray-600 font-medium"> Invoice Number </th>
-              <th className="px-4 py-2 border text-gray-600 font-medium"> Amount (Tzs)</th>
-              <th className="px-4 py-2 border text-gray-600 font-medium">Bonus (TZs){" "}</th>
-              <th className="px-4 py-2 border text-gray-600 font-medium w-32">Due Date</th>
-              <th className="px-4 py-2 border text-gray-600 font-medium">Status</th>
-              <th className="px-4 py-2 border text-gray-600 font-medium">Action</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium"> INVOICE NAME</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium"> INVOICE NUMBER</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium"> AMOUNT (Tzs)</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium">BONUS (TZs){" "}</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium w-32">DUE DATE</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium">STATUS</th>
+              <th className="px-4 py-2 border text-gray-600 font-medium">ACTION</th>
             </tr>
           </thead>
           <tbody>
             {listinvoice.map((invoiceList) => (
               <tr
                 key={invoiceList.fullname}
-                className="border-b text-md border-gray-200 hover:bg-gray-50"
+                className="border-b text-md border-gray-200"
               >
                 <td className="px-4 py-2 border">{invoiceList.invoicename}</td>
                 <td className="px-4 py-2 border">{invoiceList.invoicenumber}</td>

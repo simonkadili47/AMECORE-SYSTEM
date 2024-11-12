@@ -11,16 +11,15 @@ import image from '../assets/logo.png'
 
 const Sidebar = () => {
   const [showInvoicesDropdown, setShowInvoicesDropdown] = useState(false);
-  const [showPurchasesDropdown, setshowPurchasesDropdown] = useState(false);
   
   const toggleInvoicesDropdown = () => {
     setShowInvoicesDropdown(prev => !prev);
   };
 
 
-  const togglePurchasesDropdown = () => {
-    setShowPurchasesDropdown(prev => !prev);
-  };
+  // const togglePurchasesDropdown = () => {
+  //   setShowPurchasesDropdown(prev => !prev);
+  // };
 
 
   return (
@@ -95,7 +94,7 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/contracts" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
+                <Link to="/list-contracts" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
                   <LiaFileContractSolid className='text-2xl ml-3' />
                   <span className="ml-2">Contracts</span>
                 </Link>

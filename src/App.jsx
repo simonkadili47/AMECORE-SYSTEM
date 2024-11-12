@@ -17,6 +17,8 @@ import ListSales from './Pages/ListSales'
 import AddSales from './Pages/AddSales'
 import OfficeExpenses from './Pages/OfficeExpenses';
 import ListExpenses from './Pages/ListExpenses';
+import Addcontracts from './Pages/Addcontracts';
+import Listcontracts from './Pages/Listcontracts';
 
 function App() {
   return (
@@ -41,6 +43,10 @@ function App() {
           <Route path="/list-sales" element={<ListSales/>} />
           <Route path="/list-expenses" element={<ListExpenses/>} />
           <Route path="/add-expenses" element={<OfficeExpenses/>} />
+          <Route path="/add-contracts" element={<Addcontracts/>} />
+          <Route path="/list-contracts" element={<Listcontracts />} />
+          
+          <Route path="/contracts" element={<Navigate to="/list-contracts" />} />
 
           
 

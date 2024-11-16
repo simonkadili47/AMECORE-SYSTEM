@@ -6,9 +6,9 @@ const Dashboard = ({ children }) => {
   return (
     <div className="flex h-screen">
       <Sidebar />
-      <div className="ml-56 flex-1"> 
+      <div className="ml-36 flex-1"> 
         <Header />
-        <main className="p-4">
+        <main className="p-4 ">
           {children}
         </main>
       </div>

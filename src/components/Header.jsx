@@ -68,11 +68,11 @@ const Header = () => {
       </div>
 
       <div className="flex items-center space-x-3">
-        <IoIosNotifications size={24} className="text-blue-600" />
+        <IoIosNotifications size={24} className="text-customblue" />
 
         <div className="relative" ref={userMenuRef}>
           <div
-            className="w-8 h-8 flex items-center justify-center bg-blue-600 text-white rounded-full cursor-pointer"
+            className="w-8 h-8 flex items-center justify-center bg-customblue text-white rounded-full cursor-pointer"
             onClick={toggleUserMenu}
             aria-label="User Menu"
           >

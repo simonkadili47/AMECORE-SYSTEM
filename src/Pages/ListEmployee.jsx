@@ -48,8 +48,8 @@ const ListEmployee = () => {
         </Link>
       </div>
 
-      <div className="overflow-x-auto p-6 w-full">
-        <table className="w-full bg-white border border-gray-200 rounded-xl">
+      <div className="overflow-x-auto p-6 w-full rounded-xl">
+        <table className="w-full bg-white border  border-gray-200  rounded-xl">
           <thead className='p-6'> 
             <tr className="bg-gray-100 p-6 border-b border-gray-200">
               <th className="p-8 py-3 border text-gray-600 font-medium">FULL NAME</th>

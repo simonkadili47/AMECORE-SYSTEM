@@ -27,7 +27,8 @@ const AddEmployee = () => {
         <h2>Add Employee</h2>
       </div>
 
-      <form className="grid grid-cols-2 gap-4 p-4 mx-auto w-3/4">
+      {/* Form with customGray background */}
+      <form className="grid grid-cols-2 gap-4 p-4 mx-auto w-3/4 bg-[#fafbfe] rounded-lg">
         <div className='w-2/3 ml-28'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="full_name">
             Full Name
@@ -112,18 +113,19 @@ const AddEmployee = () => {
             placeholderText="DD-MM-YYYY" 
           />
         </div>
-      </form>
 
-      <div className="flex w-36 mx-auto mt-2">
-        <Button
-          intent="primary"
-          size="md"
-          className="w-full" 
-          type="submit"
-        >
-          Add Employee
-        </Button>
-      </div>
+        {/* Add Employee Button */}
+        <div className="col-span-2 flex justify-center mt-4">
+          <Button
+            intent="primary"
+            size="md"
+            className="w-40 bg-customblue text-white py-2 rounded-lg"
+            type="submit"
+          >
+            Add Employee
+          </Button>
+        </div>
+      </form>
     </Dashboard>
   );
 };

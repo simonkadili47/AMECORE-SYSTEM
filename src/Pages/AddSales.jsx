@@ -18,7 +18,7 @@ const AddSales = () => {
             <h2>Add Sales</h2>
           </div>
     
-          <form className="grid grid-cols-2 gap-6 p-4 mx-auto w-3/4">
+          <form className="grid grid-cols-2 justify-center gap-6 p-4 mx-auto w-3/5 bg-gray-100 shadow-lg rounded-lg">
             <div className='w-2/3 ml-28'>
               <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="product">
                Product
@@ -63,11 +63,11 @@ const AddSales = () => {
                 placeholder="Date"
               />
             </div>
-            <div className="flex w-40 mr-12 mx-auto mt-2">
+            <div className="col-span-2 flex justify-center mt-4">
             <Button
               intent="primary"
               size="md"
-              className="w-full" 
+              className="w-auto" 
               type="submit"
             >
               Add sales

@@ -19,6 +19,7 @@ import OfficeExpenses from './Pages/OfficeExpenses';
 import ListExpenses from './Pages/ListExpenses';
 import Addcontracts from './Pages/Addcontracts';
 import Listcontracts from './Pages/Listcontracts';
+import ForgotPassword from './ForgotPassword';
 
 function App() {
   return (
@@ -45,6 +46,8 @@ function App() {
           <Route path="/add-expenses" element={<OfficeExpenses/>} />
           <Route path="/add-contracts" element={<Addcontracts/>} />
           <Route path="/list-contracts" element={<Listcontracts />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/forgot_password" element={<ForgotPassword />} />
           
           <Route path="/contracts" element={<Navigate to="/list-contracts" />} />
 

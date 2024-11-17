@@ -27,7 +27,7 @@ const AddInvoice = () => {
       </div>
 
       {/* Add Invoice Form Starts Here */}
-      <form className="grid grid-cols-2 gap-y-2 p-4 mx-auto w-3/4"> {/* Reduced gap */}
+      <form className="grid grid-cols-2 justify-center gap-4 p-4 mx-auto w-3/5 bg-gray-100 shadow-lg rounded-lg"> 
         <div className="w-2/3 ml-20">
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="invoice_name">
             Invoice Name
@@ -49,7 +49,7 @@ const AddInvoice = () => {
             type="number"
             id="invoice_number"
             className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter number of invoice"
+            placeholder="Number of invoice"
           />
         </div>
 
@@ -101,18 +101,21 @@ const AddInvoice = () => {
             placeholder="Enter status"
           />
         </div>
-      </form>
 
-      <div className="flex w-36 ml-52">
+
+        <div className="col-span-2 flex justify-center mt-4">
         <Button
           intent="primary"
           size="md"
-          className="w-full"
+          className="w-auto"
           type="submit"
         >
           Add Invoice
         </Button>
       </div>
+      </form>
+
+      
     </Dashboard>
   );
 };

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import LOGO from './assets/logo.png';
 import Button from './components/buttons/Button'
 
-const Login = () => {
+const ForgotPassword = () => {
   return (
     <div className="min-h-screen flex items-start font-poppins justify-center bg-white"> 
       <div className="w-full max-w-md mt-4"> 
@@ -11,7 +11,6 @@ const Login = () => {
           <img src={LOGO} alt="Logo" className="h-16" />
         </div>
         <h2 className='text-3xl font-bold text-black'>Welcome Back to Amecore!</h2>
-        <h2 className='text-xl font-bold text-gray-600'>Login to your Account</h2>
 
         <div className="bg-gray-100 p-6 rounded-lg shadow-md mt-2"> 
           <form>
@@ -27,35 +26,7 @@ const Login = () => {
               />
             </div>
 
-            <div className="mb-2 mt-2">
-              <label className="block text-black text-md font-bold mb-2 text-left" htmlFor="password">
-                Password
-              </label>
-              <input
-                type="password"
-                id="password"
-                className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="*********"
-              />
-            </div>
-
-            <div className="flex items-center justify-between mb-2 text-sm sm:text-sm">
-              <div className="flex items-center">
-                <input
-                  type="checkbox"
-                  id="remember"
-                  className="mr-2 leading-tight"
-                />
-                <label htmlFor="remember" className="text-gray-700">
-                  Remember me 
-                </label>
-              </div>
-              <div className="text-xs sm:text-sm">
-              <Link to="/forgot-password" className="text-gray-700 hover:underline">
-  Forgot password?
-</Link>
-              </div>
-            </div>
+            
 
             <div className="flex items-center justify-between mb-4">
               <Button
@@ -81,4 +52,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default ForgotPassword;

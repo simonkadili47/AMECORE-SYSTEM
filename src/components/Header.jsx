@@ -3,6 +3,7 @@ import { FaUser } from "react-icons/fa";
 import { IoIosNotifications } from "react-icons/io";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [userMenuOpen, setUserMenuOpen] = useState(false);
@@ -11,8 +12,8 @@ const Header = () => {
 
   // Simulated user data; ideally, you'd fetch this from your auth context or API
   const user = {
-    name: "John Doe",
-    role: "Farmer",
+    name: "Sarah Timothy",
+    role: "Admin",
   };
 
   const toggleUserMenu = () => {
@@ -95,12 +96,13 @@ const Header = () => {
                   <p className="text-xs text-gray-500">{user.role}</p>
                 </div>
               </div>
-              <a
-                href="#settings"
+              <Link
+                to="#"
                 className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"
               >
                 Settings
-              </a>
+              </Link>
+
               <a
                 onClick={handleLogout}
                 className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-100 cursor-pointer"

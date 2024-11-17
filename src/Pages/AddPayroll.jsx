@@ -18,8 +18,8 @@ const AddPayroll = () => {
         <h2>Add Payroll</h2>
       </div>
 
-      <form className="grid grid-cols-2 gap-6 p-4 mx-auto w-3/4">
-        <div className='w-2/3 ml-28'>
+      <form className="grid grid-cols-2 justify-center gap-4 p-4 mx-auto w-3/5 bg-gray-100 shadow-lg rounded-lg">
+        <div className='w-2/3 ml-24'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="full_name">
             Full Name
           </label>
@@ -41,7 +41,7 @@ const AddPayroll = () => {
             placeholder="Enter his/her salary"
           />
         </div>
-        <div className='w-2/3 ml-28'>
+        <div className='w-2/3 ml-24'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="bonus">
             Bonus
           </label>
@@ -63,7 +63,7 @@ const AddPayroll = () => {
             placeholder="Month of salary"
           />
         </div>
-        <div className='w-2/3 ml-28'>
+        <div className='w-2/3 ml-24'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="year">
             Year
           </label>
@@ -74,17 +74,19 @@ const AddPayroll = () => {
             placeholder="Year of salary"
           />
         </div>
-      </form>
-      <div className="flex w-32 mx-auto mt-2">
+
+        <div className="col-span-2 flex justify-center mt-4">
         <Button
           intent="primary"
           size="md"
-          className="w-full" 
+          className="w-auto" 
           type="submit"
         >
           Add Payroll
         </Button>
       </div>
+      </form>
+     
       
     </Dashboard>
   )

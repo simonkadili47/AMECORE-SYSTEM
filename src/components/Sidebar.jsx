@@ -7,6 +7,7 @@ import { IoDocumentOutline } from "react-icons/io5";
 import { FaMoneyBillTransfer } from "react-icons/fa6";
 import { LiaFileContractSolid } from "react-icons/lia";
 import { FaCaretDown, FaCaretUp } from 'react-icons/fa'; 
+import { GoProjectSymlink } from "react-icons/go";
 import image from '../assets/logo.png'
 
 const Sidebar = () => {
@@ -97,6 +98,12 @@ const Sidebar = () => {
                 <Link to="/list-contracts" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
                   <LiaFileContractSolid className='text-2xl ml-3' />
                   <span className="ml-2">Contracts</span>
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link to="/list-projects" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
+                <GoProjectSymlink  className='text-2xl ml-3' />
+                  <span className="ml-2">Projects</span>
                 </Link>
               </li>
             </ul>

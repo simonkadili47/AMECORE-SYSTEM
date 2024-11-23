@@ -27,8 +27,8 @@ const AddEmployee = () => {
         <h2>Add Employee</h2>
       </div>
 
-      {/* Form with customGray background */}
-      <form className="grid grid-cols-2 justify-center gap-4 p-4 mx-auto w-2/3 bg-gray-100 shadow-lg rounded-lg">
+    
+      <form className="grid grid-cols-2 justify-center gap-4 p-4 mx-auto w-2/3 bg-white shadow-lg rounded-xl">
         <div className='w-3/4 ml-24'>
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="full_name">
             Full Name

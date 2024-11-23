@@ -51,7 +51,7 @@ const ListEmployee = () => {
       <div className="overflow-x-auto p-6 w-full rounded-xl">
         <table className="w-full bg-white border  border-gray-200  rounded-xl">
           <thead className='p-6'> 
-            <tr className="bg-gray-100 p-6 border-b border-gray-200">
+            <tr className="bg-white p-6 border-b border-customblue">
               <th className="p-8 py-3 border text-gray-600 font-medium">FULL NAME</th>
               <th className="pr-6 py-3 border text-gray-600 font-medium ">POSITION</th>
               <th className="pr-20 py-3 border text-gray-600 font-medium">NIN</th>

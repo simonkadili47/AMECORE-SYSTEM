@@ -62,7 +62,7 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-56 right-0 bg-white border-b border-gray-300 text-gray-800 p-3 flex justify-between items-center z-50 shadow-sm">
+    <div className="fixed top-0 left-52 right-0 bg-white border-b border-gray-300 text-gray-800 p-3 flex justify-between items-center z-50 shadow-sm">
       <div className="items-center space-x-2">
         <h1 className="text-lg font-bold">Hi</h1>
         <h1 className="text-sm">Admin</h1>

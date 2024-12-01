@@ -18,7 +18,7 @@ const Addcontracts = () => {
             <h2>Add Contract</h2>
           </div>
 
-          <form className="grid grid-cols-2 justify-center gap-6 p-4 mx-auto w-3/5 bg-gray-100 shadow-lg rounded-lg">
+          <form className="grid grid-cols-2 justify-center gap-6 p-4 mx-auto w-3/5 bg-white shadow-lg rounded-lg">
             <div className='w-2/3 ml-28 mt-2'>
               <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="customername">
                Customer Name

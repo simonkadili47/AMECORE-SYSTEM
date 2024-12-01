@@ -59,7 +59,7 @@ const ListInvoice = () => {
       <div className="overflow-x-auto p-4">
         <table className="min-w-full bg-white border border-gray-200 rounded-xl">
           <thead>
-            <tr className="bg-gray-100 border-b border-gray-200">
+            <tr className="bg-white border-b border-gray-200">
               <th className="px-4 py-2 border text-gray-600 font-medium"> INVOICE NAME</th>
               <th className="px-4 py-2 border text-gray-600 font-medium"> INVOICE NUMBER</th>
               <th className="px-4 py-2 border text-gray-600 font-medium"> AMOUNT (Tzs)</th>

@@ -39,7 +39,7 @@ const PayrollList = () => {
       <div className="overflow-x-auto p-4">
         <table className="min-w-full bg-white border border-gray-200 rounded-xl">
           <thead>
-            <tr className="bg-gray-100 border-b border-gray-200">
+            <tr className="bg-white border-b border-gray-200">
               <th className="pr-6 py-4 border text-gray-600 font-medium w-32">FULL NAME</th>
               <th className="px-4 py-4 border text-gray-600 font-medium w-32">SALARY (Tzs)</th>
               <th className="px-4 py-4 border text-gray-600 font-medium w-32">BONUS (Tzs)</th>

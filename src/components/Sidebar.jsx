@@ -101,7 +101,7 @@ const Sidebar = () => {
                 </Link>
               </li>
               <li className="mb-2">
-                <Link to="/list-projects" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
+                <Link to="/list-project" className="flex items-center hover:bg-customblue hover:text-white hover:rounded-md p-2 transition-colors">
                 <GoProjectSymlink  className='text-2xl ml-3' />
                   <span className="ml-2">Projects</span>
                 </Link>

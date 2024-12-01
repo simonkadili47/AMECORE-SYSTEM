@@ -27,7 +27,7 @@ const AddInvoice = () => {
       </div>
 
       {/* Add Invoice Form Starts Here */}
-      <form className="grid grid-cols-2 justify-center gap-4 p-4 mx-auto w-3/5 bg-gray-100 shadow-lg rounded-lg"> 
+      <form className="grid grid-cols-2 justify-center gap-4 p-4 mx-auto w-3/5 bg-white shadow-lg rounded-lg"> 
         <div className="w-2/3 ml-20">
           <label className="block text-zinc-700 text-md font-bold text-left" htmlFor="invoice_name">
             Invoice Name

@@ -20,6 +20,8 @@ import ListExpenses from './Pages/ListExpenses';
 import Addcontracts from './Pages/Addcontracts';
 import Listcontracts from './Pages/Listcontracts';
 import ForgotPassword from './ForgotPassword';
+import AddProject from './Pages/AddProject';
+import ListProject from './Pages/ListProject';
 
 function App() {
   return (
@@ -48,6 +50,8 @@ function App() {
           <Route path="/list-contracts" element={<Listcontracts />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/forgot_password" element={<ForgotPassword />} />
+          <Route path="/list-project" element={<ListProject />} />
+          <Route path="/add-project" element={<AddProject />} />
           
           <Route path="/contracts" element={<Navigate to="/list-contracts" />} />
 

@@ -11,6 +11,8 @@ const ListEmployee = () => {
   const employees = [
     { fullname: 'John Doe', position: 'Software Engineer', NIN: '191991999887', age: '24', cv: '', status: 'Employed', date: '20-10-2024' },
     { fullname: 'Jane Smith', position: 'Project Manager', NIN: '191991999888', age: '29', cv: '', status: 'Employed', date: '15-09-2024' },
+    { fullname: 'Jane Smith', position: 'Project Manager', NIN: '191991999888', age: '29', cv: '', status: 'Employed', date: '15-09-2024' },
+    
   ];
 
   return (
@@ -51,7 +53,7 @@ const ListEmployee = () => {
       <div className="overflow-x-auto p-6 w-full rounded-xl">
         <table className="w-full bg-white border  border-gray-200  rounded-xl">
           <thead className='p-6'> 
-            <tr className="bg-gray-100 p-6 border-b border-customblue">
+            <tr className="bg-white p-6 border-b border-customblue">
               <th className="p-8 py-3 border text-gray-600 font-medium">FULL NAME</th>
               <th className="pr-6 py-3 border text-gray-600 font-medium ">POSITION</th>
               <th className="pr-20 py-3 border text-gray-600 font-medium">NIN</th>

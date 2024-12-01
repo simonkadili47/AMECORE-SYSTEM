@@ -36,7 +36,7 @@ const PayrollList = () => {
         </Link>
       </div>
 
-      <div className="overflow-x-auto p-4">
+      <div className="overflow-x-auto p-4 ">
         <table className="min-w-full bg-white border border-gray-200 rounded-xl">
           <thead>
             <tr className="bg-white border-b border-gray-200">

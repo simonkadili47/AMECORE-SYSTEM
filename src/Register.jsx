@@ -9,7 +9,7 @@ const Register = () => {
       <div className="w-full max-w-md">
 
         <h2 className='text-xl font-bold text-black'>Create an Account</h2>
-        <form className="px-4 mt-8">
+        <form className="px-4 mt-8 bg-gray-100 p-6">
           <div className="mb-4">
             <label className="block text-black text-md font-bold mb-2 text-left" htmlFor="full_name">
               Full Name

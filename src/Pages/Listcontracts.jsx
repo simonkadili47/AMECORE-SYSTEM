@@ -54,7 +54,7 @@ const Listcontracts = () => {
                     <td className="px-4 py-2 border">{contractsList.enddate}</td>
                     <td className="px-4 py-2 border">{contractsList.item}</td>
                     <td className="px-6 py-2 border">
-                      <div className="flex items-center space-x-4">
+                      <div className="flex ml-16 space-x-4">
                         <button className="text-blue-500 hover:text-blue-700">
                           <FaRegEdit />
                         </button>
